@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+#map {
+    margin: auto;
+    height: 300px; 
+    width: 70%;
+}
+body {
+    background-color: #e8eefa;
+}
+
+#content {
+    width: 100%;
+    margin: auto;
+}
+
+#title {
+    margin-left: 15%;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.7;
+}
