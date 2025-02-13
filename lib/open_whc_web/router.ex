@@ -20,6 +20,12 @@ defmodule OpenWhcWeb.Router do
     get "/", PageController, :home
   end
 
+  scope "/api/v1", OpenWhcWeb do
+    pipe_through :api
+
+    get "/whc_sites", PageController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", OpenWhcWeb do
   #   pipe_through :api
@@ -27,7 +33,6 @@ defmodule OpenWhcWeb.Router do
 
   # Enable Swoosh mailbox preview in development
   if Application.compile_env(:open_whc, :dev_routes) do
-
     scope "/dev" do
       pipe_through :browser
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>WHC Explorer</title>
@@ -8,30 +8,53 @@
     <.live_title default="OpenWhc" suffix=" · Phoenix Framework">
       {assigns[:page_title]}
     </.live_title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    >
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+    </script>
   </head>
 
   <body>
-
     <table id="content">
       <tbody>
         <tr>
           <td><span id="title">World Heritage Sites Explorer</span></td>
         </tr>
-        <tr><td><div style="margin-bottom: 30px;"></div></td></tr>
         <tr>
-          <td><div id="map"></div></td>
+          <td>
+            <div style="margin-bottom: 30px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="map"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="margin-bottom: 60px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <span id="disclaimer">We are starting in London but feel free to explore!</span>
+          </td>
         </tr>
       </tbody>
     </table>
-
   </body>
 
-  <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}></script>
+  <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
+  </script>
 </html>
