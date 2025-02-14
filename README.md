@@ -19,8 +19,9 @@ For Linux:
   source .env.sh
 ```
 
-After that you just have to put docker compose up and there you go!
+After that you just have to put docker compose up
 
 ```shell
    docker-compose up --build
 ```
+You can visit localhost:4000 and play with the explorer
