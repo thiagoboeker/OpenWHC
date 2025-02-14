@@ -1,18 +1,26 @@
 # OpenWhc
 
-To start your Phoenix server:
+Project to visualize the WHC Sites collection in a interactive way
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Setup
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Setup is pretty easy, make sure you have docker installed.
+Then you can put the relevant env vars on the relevant file of your machine `.env.bat` or `.env.sh` for the build process and run:
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+For Windows:
 
-## Learn more
+```shell
+  call .env.bat
+```
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+For Linux:
+
+```shell
+  source .env.sh
+```
+
+After that you just have to put docker compose up and there you go!
+
+```shell
+   docker-compose up --build
+```
